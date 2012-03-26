@@ -27,11 +27,11 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE IF NOT EXISTS `statice` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `description` text NOT NULL,
+  `nume` varchar(100) NOT NULL,
+  `descriere` text NOT NULL,
   `order` int(11) NOT NULL,
   `visible` tinyint(1) NOT NULL,
-  `meta_description` text,
+  `meta_descriere` text,
   `meta_keywords` text,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `statice` (
 -- Dumping data for table `statice`
 --
 
-INSERT INTO `statice` (`id`, `name`, `description`, `order`, `visible`, `meta_description`, `meta_keywords`) VALUES
+INSERT INTO `statice` (`id`, `nume`, `descriere`, `order`, `visible`, `meta_descriere`, `meta_keywords`) VALUES
 (1, 'Intrare 1', '<p>Duis eu odio sit amet leo cursus euismod. Pellentesque tincidunt bibendum vehicula. Pellentesque bibendum ultrices massa, et lobortis nunc auctor tincidunt.</p>\r\n<p>Praesent eu mi velit, a varius nisi. Donec luctus rutrum risus ut bibendum. Vestibulum risus mauris, laoreet ut vulputate eget, vestibulum ac arcu.</p>\r\n<p>Morbi non sem arcu. Cras at libero a quam euismod malesuada. In sit amet felis non nulla congue gravida. Etiam elementum lobortis neque, at varius velit rhoncus gravida. Maecenas id nisi sem, quis convallis nunc. Suspendisse id mauris at dolor adipiscing vestibulum. Aliquam sit amet massa tellus, vel tincidunt erat. Vestibulum consectetur feugiat magna, ut volutpat dolor mattis eget.</p>', 1, 1, '', ''),
 (2, 'Intrare 2', '<p>Duis eu odio sit amet leo cursus euismod. Pellentesque tincidunt bibendum vehicula. Pellentesque bibendum ultrices massa, et lobortis nunc auctor tincidunt. Praesent eu mi velit, a varius nisi. Donec luctus rutrum risus ut bibendum. Vestibulum risus mauris, laoreet ut vulputate eget, vestibulum ac arcu. Morbi non sem arcu. Cras at libero a quam euismod malesuada. In sit amet felis non nulla congue gravida. Etiam elementum lobortis neque, at varius velit rhoncus gravida. Maecenas id nisi sem, quis convallis nunc. Suspendisse id mauris at dolor adipiscing vestibulum. Aliquam sit amet massa tellus, vel tincidunt erat. Vestibulum consectetur feugiat magna, ut volutpat dolor mattis eget.</p>', 2, 0, NULL, NULL),
 (5, 'Intrare 3', '<p>test</p>', 3, 1, NULL, NULL);
