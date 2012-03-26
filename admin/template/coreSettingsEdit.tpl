@@ -82,6 +82,13 @@
 		<td>A fost sters</td>
 		<td><input type="text" name="deleted" value="{$message.deleted|default:'Elementul a fost sters cu succes'}"></td>
 	</tr>
+	<tr>
+		<th colspan="2">Filtre</th>
+	</tr>
+	<tr>
+		<td>Numele campurilor din tabel<br> separate cu "," (virgula)</td>
+		<td><input type="text" name="filter" value="{$filter}"></td>
+	</tr>
 </table>
 <h3 class="marg-top">Elemente</h3>
 <table id="elements">
