@@ -36,6 +36,7 @@ class Admin_Core_Settings {
 			$this->_tpl->config   = $settings['config'];
 			$this->_tpl->message  = $settings['message'];
 			$this->_tpl->elements = $settings['elements'];
+			$this->_tpl->filter   = implode(', ', $settings['filter']);
 		} else {
 			$this->_tpl->elements = array(
 				'nume' => array(
@@ -69,7 +70,7 @@ class Admin_Core_Settings {
 				'functionVisible'       => post('functionVisible') == 'on' ? 1 : 0,
 				'functionCreateTable'   => post('functionCreateTable') == 'on' ? 1 : 0,
 			),
-			'message' =>array(
+			'message' => array(
 				'add'       => post('add'),
 				'edit'      => post('edit'),
 				'no_images' => post('no_images'),
@@ -77,6 +78,7 @@ class Admin_Core_Settings {
 				'added'     => post('added'),
 				'deleted'   => post('deleted'),
 			),
+			'filter' => array_map('trim', explode(',', post('filter'))),
 		);
 		$settings['elements'] = array();
 		foreach (post('elements') as $element) {
