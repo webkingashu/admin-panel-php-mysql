@@ -1,6 +1,6 @@
 <?php
 
-	define('BASE_URL','http://localhost/admin/');
+	define('BASE_URL','http://localhost/cms/');
 	define('BASE_DIR', realpath(dirname(__FILE__)) . '/');
 	
 	define('DB_HOST',     'localhost');
