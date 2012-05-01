@@ -60,7 +60,7 @@
 	</tr>
 	<tr>
 		<td>Adauga</td>
-		<td><input type="text" name="add" value="{$message.add|default:'Adauca un element'}"></td>
+		<td><input type="text" name="add" value="{$message.add|default:'Adauga un element'}"></td>
 	</tr>
 	<tr>
 		<td>Editeaza</td>
